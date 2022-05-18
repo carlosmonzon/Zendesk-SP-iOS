@@ -9,8 +9,8 @@ let package = Package(
         .library(
             name: "ChatSDK",
             targets: [
-                "ChatSDK",
-                "ChatProvidersSDK",
+                "ZendeskCoreSDK",
+                "SupportSDK",
                 "CommonUISDK",
                 "MessagingAPI",
                 "MessagingSDK",
@@ -18,9 +18,15 @@ let package = Package(
             ]
         ),
         .library(
-            name: "ChatProvidersSDK",
+            name: "ZendeskCoreSDK",
             targets: [
-                "ChatProvidersSDK",
+                "ZendeskCoreSDK",
+            ]
+        ),
+        .library(
+            name: "SupportSDK",
+            targets: [
+                "SupportSDK",
             ]
         ),
         .library(
@@ -53,14 +59,14 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "ChatSDK",
-            url: "https://github.com/zendesk/chat_sdk_ios/releases/download/2.11.2/ChatSDK.xcframework.zip",
-            checksum: "a72edead02928974be6050bcb7d026949e61a5925422a19a03bc0fedea369e8d"
+            name: "ZendeskCoreSDK",
+            url: "https://github.com/zendesk/core_sdk_ios/releases/download/2.6.0/ZendeskCoreSDK.xcframework.zip",
+            checksum: "1641867503d3540b494f32a0719853e8c3ed143e9ad7beb7ecfbccc48841aa88"
         ),
         .binaryTarget(
-            name: "ChatProvidersSDK",
-            url: "https://github.com/zendesk/chat_providers_sdk_ios/releases/download/2.11.2/ChatProvidersSDK.xcframework.zip",
-            checksum: "348a45bd9ddea201d91f18159af3a4253af7c515acfd5bc9768d6ab294cfb2d7"
+            name: "SupportSDK",
+            url: "https://github.com/zendesk/support_sdk_ios/releases/download/5.4.0/SupportSDK.xcframework.zip",
+            checksum: "7e14ee445a21c9323229436ff2f931bc79ac4c03882aedb92047cd59e430b644"
         ),
         .binaryTarget(
             name: "CommonUISDK",
