@@ -7,17 +7,6 @@ let package = Package(
     name: "ZendeskSP",
     products: [
         .library(
-            name: "SupportCoreSDK",
-            targets: [
-                "ZendeskCoreSDK",
-                "SupportSDK",
-                "CommonUISDK",
-                "MessagingAPI",
-                "MessagingSDK",
-                "SDKConfigurations",
-            ]
-        ),
-        .library(
             name: "ZendeskCoreSDK",
             targets: [
                 "ZendeskCoreSDK",
@@ -27,6 +16,12 @@ let package = Package(
             name: "SupportSDK",
             targets: [
                 "SupportSDK",
+            ]
+        ),
+        .library(
+            name: "SupportProvidersSDK",
+            targets: [
+                "SupportProvidersSDK",
             ]
         ),
         .library(
@@ -67,6 +62,11 @@ let package = Package(
             name: "SupportSDK",
             url: "https://github.com/zendesk/support_sdk_ios/releases/download/5.4.0/SupportSDK.xcframework.zip",
             checksum: "7e14ee445a21c9323229436ff2f931bc79ac4c03882aedb92047cd59e430b644"
+        ),
+        .binaryTarget(
+            name: "SupportProvidersSDK",
+            url: "https://github.com/zendesk/support_providers_sdk_ios/releases/download/5.4.0/SupportProvidersSDK.xcframework.zip",
+            checksum: "5d9e03ee24ae417ec6547e77bc8c329ad12dd47c504f34c93853006fde7d9a79"
         ),
         .binaryTarget(
             name: "CommonUISDK",
