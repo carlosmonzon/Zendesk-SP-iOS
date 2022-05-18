@@ -7,7 +7,7 @@ let package = Package(
     name: "ZendeskSP",
     products: [
         .library(
-            name: "SupportSDK",
+            name: "SupportCoreSDK",
             targets: [
                 "ZendeskCoreSDK",
                 "SupportSDK",
